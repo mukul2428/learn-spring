@@ -4,9 +4,9 @@ public class GameRunner {
     // we have to make changes in game runner class in order to run another game instead of mario game
     // hence it is called tightly coupled
     // use interfaces to make it loosely coupled
-    MarioGame game;
+    GamingConsole game;
 
-    public GameRunner(MarioGame game){
+    public GameRunner(GamingConsole game){
         this.game = game;
     }
 
