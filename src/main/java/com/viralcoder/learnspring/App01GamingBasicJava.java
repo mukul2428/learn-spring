@@ -4,7 +4,7 @@ import com.viralcoder.learnspring.game.GameRunner;
 import com.viralcoder.learnspring.game.MarioGame;
 import com.viralcoder.learnspring.game.SuperContraGame;
 
-public class AppGamingBasicJava {
+public class App01GamingBasicJava {
     public static void main(String[] args) {
         // creating instance of mario game
 //        var game = new MarioGame();
