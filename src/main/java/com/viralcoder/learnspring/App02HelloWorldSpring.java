@@ -14,9 +14,14 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("name"));
         System.out.println(context.getBean("age"));
         System.out.println(context.getBean("person"));
-//        System.out.println(context.getBean("address"));
+        System.out.println(context.getBean("address2"));
         System.out.println(context.getBean("customAddress"));
         //or
         System.out.println(context.getBean(Address.class));
+        //reuse existing beans
+        System.out.println(context.getBean("reusePerson1"));
+        System.out.println(context.getBean("reusePerson2"));
+        System.out.println(context.getBean("reusePerson3"));
+        System.out.println(context.getBean("reusePerson4"));
     }
 }
