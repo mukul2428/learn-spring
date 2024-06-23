@@ -9,6 +9,7 @@ public class App01GamingBasicJava {
         // creating instance of mario game
 //        var game = new MarioGame();
         var game = new SuperContraGame();
+        game.up(); // we can even directly print it here
         // running mario game using game runner
         var gameRunner = new GameRunner(game);
         gameRunner.run();

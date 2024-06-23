@@ -1,4 +1,4 @@
-package com.viralcoder.learnspring;
+package com.viralcoder.learnspring.helloworld;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
