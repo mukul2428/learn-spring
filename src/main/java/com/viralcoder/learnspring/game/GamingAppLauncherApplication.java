@@ -1,11 +1,14 @@
-package com.viralcoder.learnspring;
-import com.viralcoder.learnspring.game.GameRunner;
-import com.viralcoder.learnspring.game.GamingConsole;
+package com.viralcoder.learnspring.game;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-public class App03GamingSpringBeans {
+
+@Configuration
+@ComponentScan("package com.viralcoder.learnspring.game")
+public class GamingAppLauncherApplication {
     public static void main(String[] args) {
-        try(var context = new AnnotationConfigApplicationContext(GamingConfiguration.class)) {
+        try(var context = new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class)) {
             // printed supercontra/mario up method using gamingconsole interface
             context.getBean(GamingConsole.class).up();
             // printed all methods of game using gamerunner

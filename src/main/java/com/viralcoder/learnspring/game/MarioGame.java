@@ -1,5 +1,10 @@
 package com.viralcoder.learnspring.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class MarioGame implements GamingConsole {
     // implementing methods that will perform specific actions when specific button is pressed on game
     public void up(){
