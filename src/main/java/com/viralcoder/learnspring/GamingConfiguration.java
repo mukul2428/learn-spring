@@ -6,8 +6,14 @@ import com.viralcoder.learnspring.game.SuperContraGame;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//configure the things that we want spring to manage
 @Configuration
 public class GamingConfiguration {
+    // so instead of doing this previously
+//    var game = new SuperContraGame();
+//    var gameRunner = new GameRunner(game);
+//    gameRunner.run();
+    // now do below things using @Bean
     @Bean
     public GamingConsole gamingConsole(){
         var game = new SuperContraGame();
