@@ -1,10 +1,13 @@
 package com.viralcoder.learnspring.examples.c1;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
-@Component
+//@Component
+// if we are writing business logic in a class then we can use @service
+@Service
 public class BusineesCalculationService {
     private DataService dataService;
 

@@ -2,8 +2,10 @@ package com.viralcoder.learnspring.examples.c1;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository
 @Primary
 public class MySQLDataService implements DataService{
     @Override
